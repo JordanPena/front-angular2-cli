@@ -1,0 +1,24 @@
+{
+  "name": "front",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Jordan Pena <jordan.pena1@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "app-layout": "^0.10.4",
+    "paper-icon-button": "^1.1.3",
+    "iron-icons": "^1.1.3",
+    "paper-item": "^1.2.1",
+    "paper-menu": "^1.2.2"
+  }
+}

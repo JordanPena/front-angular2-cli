@@ -1,3 +1,36 @@
-<h1>
-  {{title}}
-</h1>
+
+<app-drawer align="end" style="z-index: 999;" #map>
+  <app-toolbar></app-toolbar>
+  <paper-menu selected="0">
+   <paper-icon-item>
+    <iron-icon icon="extension" item-icon></iron-icon>
+    Quiz
+  </paper-icon-item>
+  <paper-icon-item>
+  <iron-icon icon="favorite-border" item-icon></iron-icon>
+  Feed</paper-icon-item>
+  <paper-icon-item>
+<iron-icon icon="face" item-icon></iron-icon>
+  Perfil</paper-icon-item>
+</paper-menu>
+</app-drawer>
+
+<app-header-layout>
+  <app-header reveals effects="waterfall">
+    <app-toolbar>
+      <div main-title>App name</div>
+      <paper-icon-button icon="menu" (click)='map.toggle()'></paper-icon-button>
+    </app-toolbar>
+  </app-header>
+  <div>
+    main content
+    <h1>
+      {{title}}
+    </h1>
+  </div>
+</app-header-layout>
+
+
+
+
+

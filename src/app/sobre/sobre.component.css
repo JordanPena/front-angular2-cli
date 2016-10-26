@@ -1,0 +1,62 @@
+.flex-center-justified {
+  @apply(--layout-horizontal);
+  @apply(--layout-center-justified);
+}
+
+iron-pages {
+  width: 100%;
+  height: 500px;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+div {
+  width: 100%;
+  height: 100%;
+  padding: 60px 0;
+}
+
+app-box {
+  --app-box-background-front-layer: {
+    background: transparent;
+    background-position: bottom;
+    padding-bottom: 20px;
+    margin-top: -20px;
+    height: 250px;
+  };
+  }
+
+  article h2 {
+    font-weight: 50;
+    font-size: 30px;
+    margin: 5px;
+  }
+  article p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  article hr {
+    width: 100px;
+    height: 1px;
+    border: none;
+    margin: 20px auto;
+    background-color: black;
+  }
+
+  iron-pages div:nth-child(1) {
+    background-color: var(--google-blue-500);
+  }
+  iron-pages div:nth-child(2) {
+    background-color: var(--google-red-500);
+  }
+  iron-pages div:nth-child(3) {
+    background-color: var(--google-green-500);
+  }
+
+  article {
+    font-weight: 50;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto 100px auto;
+    height: 400px;
+  }

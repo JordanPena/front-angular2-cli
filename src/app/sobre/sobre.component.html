@@ -1,0 +1,22 @@
+<div class="container flex-center-justified">
+  <iron-pages #pages selected="0">
+    <div (click)='pages.selectNext()'>
+      <article>
+        <hr>
+        <h2>Using Web Components</h2>
+        <p>Visamos auxiliar pessoas a encontrar causas sociais e praticar atividades de solidariedade!</p>
+      </article>
+      <app-box effects="parallax-background">
+        <iron-icon icon="face" item-icon></iron-icon>
+      </app-box>
+    </div>
+    <div (click)='pages.selectNext()'>
+      <article>
+        <hr>
+        <h2>Using Web Components</h2>
+        <p>Devemos unir as tribos engajadas em ajudar!</p>
+      </article>
+    </div>
+  </iron-pages>
+</div>
+

@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "resultados": {
+      ".read": "true",
+      ".write": "true"
+    }
+  }
+}

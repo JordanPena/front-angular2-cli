@@ -1,22 +1,48 @@
-<div class="container flex-center-justified">
+<div class="container flex-vertical">
   <iron-pages #pages selected="0">
-    <div (click)='pages.selectNext()'>
-      <article>
-        <hr>
-        <h2>Using Web Components</h2>
-        <p>Visamos auxiliar pessoas a encontrar causas sociais e praticar atividades de solidariedade!</p>
-      </article>
-      <app-box effects="parallax-background">
-        <iron-icon icon="face" item-icon></iron-icon>
-      </app-box>
+
+    <div class="flexchild-vertical">
+      <h2>{{title}}</h2>
+      <img src="/assets/images/fome.png" (click)="clickLink({educacao: 0, fome: 60, assistencia: 35, moradia: 35, ambiente: 20, saude: 30,cultura: 15, esporte:20}); pages.selectNext();" width="400" height="400">
+
+      <img src="/assets/images/saude2.png" (click)="clickLink({educacao: 0, fome: 15, assistencia: 0, moradia: 0, ambiente: 20, saude: 60,cultura: 15, esporte:15}); pages.selectNext();" width="400" height="400">
+
     </div>
-    <div (click)='pages.selectNext()'>
-      <article>
-        <hr>
-        <h2>Using Web Components</h2>
-        <p>Devemos unir as tribos engajadas em ajudar!</p>
-      </article>
-    </div>
-  </iron-pages>
+
+    <!--<div class="flexchild-vertical">
+     <h2>{{title}}</h2>
+     <img src="/assets/images/fome2.png" (click)="clickLink({educacao: 10, fome: 60, assistencia: 20, moradia: 20, ambiente: 30, saude: 40,cultura: 10, esporte:10}); pages.selectNext();" width="400" height="400">
+
+     <img src="/assets/images/saude2.png" (click)="clickLink({educacao: 10, fome: 60, assistencia: 20, moradia: 20, ambiente: 30, saude: 40,cultura: 10, esporte:10}); pages.selectNext();" width="400" height="400">
+
+   </div>-->
+
+   <div class="flexchild-vertical">
+    <h2>{{title}}</h2>
+    <img src="/assets/images/educacao.png" (click)="clickLink({educacao: 60, fome: 10, assistencia: 30, moradia: 0, ambiente: 30, saude: 10,cultura: 10, esporte:10}); pages.selectNext();" width="400" height="400">
+
+    <img src="/assets/images/esporte.png" (click)="clickLink({educacao: 10, fome: 10, assistencia: 30, moradia: 0, ambiente: 0, saude: 0,cultura: 15, esporte:60}); pages.selectNext();" width="400" height="400">
+
+  </div>
+
+  <div class="flexchild-vertical">
+    <h2>{{title}}</h2>
+    <img src="/assets/images/ambiente.png" (click)="clickLink({educacao: 10, fome: 20, assistencia: 0, moradia: 20, ambiente: 60, saude: 10,cultura: 10, esporte:0}); pages.selectNext();" width="400" height="400">
+
+    <img src="/assets/images/cultura.png" (click)="clickLink({educacao: 20, fome: 0, assistencia: 0, moradia: 20, ambiente: 30, saude: 10,cultura: 60, esporte:0}); pages.selectNext();" width="400" height="400">
+
+  </div>
+
+  <div class="flexchild-vertical">
+    <h2>{{title}}</h2>
+    <img src="/assets/images/moradia.png" (click)="clickLink({educacao: 10, fome: 20, assistencia: 40, moradia: 60, ambiente: 0, saude: 10,cultura: 10, esporte:10}); postAreas();" width="400" height="400">
+
+    <img src="/assets/images/pedinte.png" (click)="clickLink({educacao: 10, fome: 50, assistencia: 40, moradia: 20, ambiente: 0, saude: 10,cultura: 0, esporte:0}); postAreas()" width="400" height="400">
+
+  </div>
+
+
+
+</iron-pages>
 </div>
 

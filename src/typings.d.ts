@@ -3,3 +3,7 @@
 // https://www.typescriptlang.org/docs/handbook/writing-declaration-files.html
 
 declare var System: any;
+
+//config angularfire
+declare var require: any;
+declare var module: any;

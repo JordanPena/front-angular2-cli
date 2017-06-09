@@ -1,0 +1,100 @@
+<div class="container flex-vertical">
+
+  <div class="flexchild-vertical">
+    <h2>Identificamos sua simpatia por questões de:</h2>
+
+
+    <div style="margin:0 auto; position:relative; text-align: center;">
+      <div style="margin:0 auto; width:100%;">
+        <paper-card class="rate">
+            <div class="rate-content">
+              <div class="card-content">
+                <p class="rate-header">Educação</p>
+                <paper-progress value="{{valorEducacao}}" class="progress"></paper-progress>
+              </div>
+            </div>
+          </paper-card>
+
+          <paper-card class="rate">
+            <div class="rate-content">
+              <div class="card-content">
+                <p class="rate-header">Combate a fome</p>
+                <paper-progress value="{{valorFome}}" class="progress"></paper-progress>
+              </div>
+            </div>
+          </paper-card>
+
+          <paper-card class="rate">
+            <div class="rate-content">
+              <div class="card-content">
+                <p class="rate-header">Assistência Social</p>
+                <paper-progress value="{{valorAssistencia}}" class="progress"></paper-progress>
+              </div>
+            </div>
+          </paper-card>
+
+          <paper-card class="rate">
+            <div class="rate-content">
+              <div class="card-content">
+                <p class="rate-header">Moradia</p>
+                <paper-progress value="{{valorMoradia}}" class="progress"></paper-progress>
+              </div>
+            </div>
+          </paper-card>
+
+          <paper-card class="rate">
+            <div class="rate-content">
+              <div class="card-content">
+                <p class="rate-header">Meio ambiente</p>
+                <paper-progress value="{{valorAmbiente}}" class="progress"></paper-progress>
+              </div>
+            </div>
+          </paper-card>
+
+          <paper-card class="rate">
+            <div class="rate-content">
+              <div class="card-content">
+                <p class="rate-header">Saúde</p>
+                <p></p>
+                <paper-progress value="{{valorSaude}}" class="progress"></paper-progress>
+              </div>
+            </div>
+          </paper-card>
+
+          <paper-card class="rate">
+            <div class="rate-content">
+              <div class="card-content">
+                <p class="rate-header">Cultura</p>
+                <p></p>
+                <paper-progress value="{{valorCultura}}" class="progress"></paper-progress>
+              </div>
+            </div>
+
+          </paper-card>
+          <paper-card class="rate">
+            <div class="rate-content">
+              <div class="card-content">
+                <p class="rate-header">Esporte e Lazer</p>
+                <p></p>
+                <paper-progress value="{{valorEsporte}}" class="progress"></paper-progress>
+              </div>
+            </div>
+
+          </paper-card>
+      </div>
+      <h4>Crie seu perfil Solidário e compartilhe seus resultados!</h4>
+
+      <paper-button (click)="faceRegister();">
+        <img id="face" src="/assets/images/face.png">
+      </paper-button>
+
+      <!--<paper-button (click)="modalLogin.open()" style="background-color: red; width: 268px; color:white; margin-top: 20px;">Criar Perfil</paper-button>-->
+    </div>
+
+    <paper-dialog id="modal" modal #modalLogin>
+      <app-cadastre></app-cadastre>
+      <div class="buttons">
+        <paper-button dialog-confirm autofocus>Cancelar</paper-button>
+      </div>
+    </paper-dialog>
+  </div>

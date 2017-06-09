@@ -1,0 +1,41 @@
+.flex-vertical {
+  @apply(--layout-vertical);
+  @apply(--layout-end);
+
+}
+
+/*
+[threshold-triggered] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+*/
+
+section {
+  padding-top: 150px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 100;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto 100px auto;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 40px;
+}
+
+hr {
+  width: 100px;
+  height: 1px;
+  border: none;
+  margin: 20px auto;
+  background-color: black;
+}

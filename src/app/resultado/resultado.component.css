@@ -1,0 +1,57 @@
+.flexchild-vertical {
+  @apply(--layout-flex);
+}
+
+.flex-vertical {
+  @apply(--layout-vertical);
+  @apply(--layout-end);
+
+
+}
+
+paper-card.rate {
+  width: 300px;
+  height: 110px;
+  margin-top: 15px;
+}
+
+.progress {
+  --paper-progress-height: 10px;
+  --paper-progress-transition-duration: 0.08s;
+  --paper-progress-transition-timing-function: ease;
+  --paper-progress-transition-transition-delay: 0s;
+}
+
+paper-progress {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.rate{
+  text-align: center;
+}
+.rate-content {
+  @apply(--layout-flex);
+  float: left;
+  text-align: center;
+}
+
+.rate-header { @apply(--paper-font-headline); }
+
+h2 {
+  max-width: 500px;
+  text-align: center;
+  margin: 10px auto;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 40px;
+}
+
+#face {
+  width: 270px;
+}
+
+h4 {
+  margin-top: 80px;
+}

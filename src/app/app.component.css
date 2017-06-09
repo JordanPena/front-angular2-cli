@@ -1,8 +1,9 @@
 app-toolbar {
   background: var(--primary-color);
   color: var(--dark-theme-text-color);
+  text-align: center;
+  z-index: 9999999;
 }
-
 
 app-drawer {
   --app-drawer-content-container: {
@@ -10,7 +11,42 @@ app-drawer {
   }
   --app-drawer-scrim-background: rgba(179, 157, 219, 0.5);
 }
-
-app-header-layout {
-  width: 100%;
+.title{
+  flex: 1 1 auto;
+  cursor: pointer;
 }
+/*
+.nav {
+  height: 64px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.nav li {
+  display: inline-block;
+  list-style: none;
+}
+.nav a {
+  display: inline-block;
+  font-weight: 12px;
+  line-height: 64px;
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  margin: 0 10px;
+}
+.nav a:hover {
+  color: #444;
+  border-bottom: 1px solid #999;
+}
+
+.final{
+  position: fixed;
+  bottom: 0;
+  height: 100%;
+  }*/
+
+  app-header-layout {
+    width: 100%;
+  }
